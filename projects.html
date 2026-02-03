@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ted Oladele — Replica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font (closest match) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --red: #ff3b30;
+      --text: #111;
+      --muted: #777;
+      --bg: #f7f7f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Crimson Text', serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-weight: 500;
+      font-size: 16.5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Layout */
+    .container {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 80px;
+      padding: 60px;
+      max-width: 1400px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+    }
+
+    .sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      text-transform: uppercase;
+    }
+
+    .sidebar a {
+      color: var(--text);
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .sidebar a.active,
+    .sidebar a:hover {
+      color: var(--red);
+    }
+
+    .sidebar-footer {
+      position: fixed;
+      bottom: 40px;
+      left: 60px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* Content */
+    .content {
+      max-width: 800px;
+    }
+
+    .project {
+      margin-bottom: 48px;
+    }
+
+    .project h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .project h2 a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s ease;
+    }
+
+    /* Prevent red hover effect on project links */
+    .project h2 a:hover,
+    .project .link:hover {
+      color: inherit;
+    }
+
+    .arrow {
+      font-size: 14px;
+      transform: translateY(-2px);
+    }
+
+    .project .link {
+      font-size: 14px;
+      color: var(--red);
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+
+    .project p {
+      font-size: 16.5px;
+      color: #222;
+      max-width: 680px;
+    }
+
+    /* Smaller section spacing like screenshot */
+    .project.small {
+      margin-bottom: 28px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 24px;
+      }
+
+      .sidebar-footer {
+        position: static;
+        margin-top: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <a href="index.html">Work</a>
+        <a href="thoughts.html">Thoughts</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="career.html">Career</a>
+        <a href="internet.html">On the Internet</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        TED OLADELE
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+      <section class="project">
+        <h2>Mira</h2>
+        <a class="link" href="https://usemira.com" target="_blank" class="project-link">usemira.com ↗</a>
+        <p>
+          Mira is the fastest way for diners in africa to order and pay for their food.
+        </p>
+      </section>
+
+      <section class="project">
+        <h2>Hundredgood</h2>
+        <a class="link" href="https://hundredgood.com" target="_blank" class="project-link">hundredgood.com ↗</a>
+        <p>
+          HundredGood is an annual list that shines the light on real good stories across Africa. With hundred stories every year, we want to replace despair about the status quo with a perspective that inspires hope.
+        </p>
+      </section>
+
+      <section class="project">
+        <h2>IYKYK</h2>
+        <a class="link" href="https://iykyk.studios" target="_blank" class="project-link">iykyk.studio ↗</a>
+        <p>
+         A group of makers who are driven first by creative freedom. we've spent the past decade making things at our jobs for startups, large institutions, and global brands. Now we're not in a hurry, and we'll only make what is excellent.
+        </p>
+      </section>
+
+      <section class="project">
+        <h2>Sun and country</h2>
+        <a class="link" href="https://sunandcountry.com" target="_blank" class="project-link">sunandcountry.com ↗</a>
+        <p>
+          Sun and Country is the definitive, story-led guide to understanding the Nigerian Civil War, capturing the events that led to it, how it played out on all sides, and how it continues to shape our world today. Our mission is to create a body of work that captures this story and makes it accessible to everyone.
+        </p>
+      </section>
+
+      <section class="project">
+        <h2>Design capital</h2>
+        <a class="link" href="https://getdesigncapital.com" target="_blank" class="project-link">getdesigncapital.com ↗</a>
+        <p>
+            Design capital allows the worlds most ambitious designers invest in very early startups. They invest up to $100k in design work in exceptional early stage companies, in return for equity.  
+        </p>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
