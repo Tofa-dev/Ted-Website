@@ -40,9 +40,10 @@
     .container {
       display: grid;
       grid-template-columns: 180px 1fr;
-      gap: 80px;
-      padding: 60px;
-      max-width: 1400px;
+      gap: 60px;
+      padding: 40px 40px 40px 40px;
+      max-width: none;
+      margin: 0;
     }
 
     /* Sidebar */
@@ -50,6 +51,7 @@
       font-size: 13px;
       font-weight: 400;
       letter-spacing: 0.03em;
+      align-self: start;
     }
 
     .sidebar nav {
@@ -72,8 +74,8 @@
 
     .sidebar-footer {
       position: fixed;
-      bottom: 40px;
-      left: 60px;
+      bottom: 24px;
+      left: 40px;
       font-size: 13px;
       font-weight: 600;
     }
@@ -81,6 +83,7 @@
     /* Content */
     .content {
       max-width: 800px;
+      margin: 0;
     }
 
     .project {
@@ -133,8 +136,8 @@
     @media (max-width: 900px) {
       .container {
         grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 40px 24px;
+        gap: 32px;
+        padding: 24px;
       }
 
       .sidebar-footer {
