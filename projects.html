@@ -28,7 +28,7 @@
       color: var(--text);
       line-height: 1.6;
       font-weight: 500;
-      font-size: 16.5px;
+      font-size: 18px;
     }
 
     a {
@@ -39,9 +39,8 @@
     /* Layout */
     .container {
       display: grid;
-      grid-template-columns: 180px 1fr;
-      gap: 60px;
-      padding: 40px 40px 40px 40px;
+      grid-template-columns: 1fr;
+      padding: 40px 40px 40px 260px;
       max-width: none;
       margin: 0;
     }
@@ -51,7 +50,11 @@
       font-size: 13px;
       font-weight: 400;
       letter-spacing: 0.03em;
-      align-self: start;
+      position: fixed;
+      top: 40px;
+      left: 40px;
+      width: 180px;
+      font-size: 14px;
     }
 
     .sidebar nav {
@@ -91,9 +94,9 @@
     }
 
     .project h2 {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: 500;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .project h2 a {
@@ -115,16 +118,16 @@
     }
 
     .project .link {
-      font-size: 14px;
+      font-size: 15.5px;
       color: var(--red);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       display: inline-block;
     }
 
     .project p {
-      font-size: 16.5px;
+      font-size: 18px;
       color: #222;
-      max-width: 680px;
+      max-width: 720px;
     }
 
     /* Smaller section spacing like screenshot */
@@ -135,8 +138,6 @@
     /* Responsive */
     @media (max-width: 900px) {
       .container {
-        grid-template-columns: 1fr;
-        gap: 32px;
         padding: 24px;
       }
 
