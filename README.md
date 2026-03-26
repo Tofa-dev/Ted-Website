@@ -1,4 +1,4 @@
-## TED Weebsite Portfolio Clone
+## TED Website Portfolio Clone
 
 A modern and responsive front-end website inspired by TED, designed to showcase talks, ideas, and content in a clean and engaging layout.
 
